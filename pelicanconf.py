@@ -3,9 +3,8 @@
 
 AUTHOR = 'Administrator'
 SITENAME = 'MIA PyUG Test'
-SITEURL = ''
-# SITEURL = 'https://sol-finance.github.io/mia-pyug-test'
-SEARCH_URL = '/search'
+# SITEURL = ''
+SITEURL = 'https://sol-finance.github.io/mia-pyug-test'
 PATH = 'content'
 
 TIMEZONE = 'Asia/Kuala_Lumpur'
@@ -59,7 +58,7 @@ PLUGINS += [
 
 # for Tique Search Plugin
 
-PLUGINS += ['tipue_search' ] 
+PLUGINS += ['tipue_search'] 
 
 TIPUE_SEARCH = True
 DIRECT_TEMPLATES = ('index','tags', 'categories', 'authors', 'archives', 'search')
