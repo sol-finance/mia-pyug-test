@@ -4,7 +4,6 @@
 AUTHOR = 'Administrator'
 SITENAME = 'MIA PyUG Test'
 SITEURL = ''
-# SITEURL = 'https://sol-finance.github.io/mia-pyug-test'
 PATH = 'content'
 
 TIMEZONE = 'Asia/Kuala_Lumpur'
