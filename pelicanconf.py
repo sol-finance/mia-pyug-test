@@ -4,7 +4,8 @@
 AUTHOR = 'Administrator'
 SITENAME = 'MIA PyUG Test'
 SITEURL = ''
-
+# SITEURL = 'https://sol-finance.github.io/mia-pyug-test'
+SEARCH_URL = '/search'
 PATH = 'content'
 
 TIMEZONE = 'Asia/Kuala_Lumpur'
@@ -39,14 +40,18 @@ DEFAULT_PAGINATION = 5
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+# PLUGINS
+
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = []
+
 # THEMES
 
 THEME = 'pelican-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'flatly'
-PLUGIN_PATHS = ['pelican-plugins']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 I18N_TEMPLATES_LANG = 'en'
-PLUGINS = [
+PLUGINS += [
     'i18n_subsites',
     'series',
     'render_math',
@@ -62,7 +67,7 @@ DIRECT_TEMPLATES = ('index','tags', 'categories', 'authors', 'archives', 'search
 # pelicanconf.py Jupyter Notebooks plugin
 
 MARKUP = ("md", "ipynb")
-PLUGINS += ['pelican_jupyter.markup']
+# PLUGINS += ['pelican_jupyter.markup']
 # this is the path to the module located inside 'pelican-ipynb' which should be part of the plugins installed earlier
 
 IGNORE_FILES = [".ipynb_checkpoints"]
